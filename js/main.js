@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         centerPadding: '10px',
         slidesToShow: 3,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 1000,
         prevArrow: false,
         nextArrow: false,
         infinite: true,
