@@ -173,9 +173,9 @@ img {
     /*     padding: .5rem 1.2rem; */
 }
 
-.menu-icon img {
-    width: 3rem;
-    height: 3rem;
+.menu-icon {
+    color: var(--blanco);
+    font-size: 3rem;
 }
 
 .menu-icon,
