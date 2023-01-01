@@ -33,9 +33,9 @@
     <link rel="preload" href="../css/main.css" as="style">
     <link rel="stylesheet" href="../css/main.css">
 
-    <link rel="preload" href="./css/aos.css" as="style">
-    <link rel="stylesheet" href="./css/aos.css">
-
+    <link rel="preload" href="../css/aos.css" as="style">
+    <link rel="stylesheet" href="../css/aos.css">
+    <script src="../js/aos.js"></script>
 </head>
 
 <body>
@@ -63,18 +63,19 @@
         </div>
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
     <main class="contenedor">
         <div class="contenido-principal">
-            <h2 class="titulos-paginas">Contáctanos</h2>
+            <h2 class="titulos-paginas" data-aos="fade-up">Contáctanos</h2>
 
-            <hr class="hr-paginas">
+            <hr class="hr-paginas" data-aos="fade-up">
 
-            <p class="parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis nemo voluptatem modi consequatur
+            <p class="parrafos" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis nemo voluptatem modi consequatur
                 quas iste beatae aperiam a consequuntur laborum doloremque reiciendis iusto, sint iure libero harum.
                 Neque modi, doloremque quasi dicta officia nam, eius ratione deleniti nemo cum error voluptatum
                 distinctio, corporis vero facere quis laudantium quaerat. Quam.</p>
 
-            <div class="mapa">
+            <div class="mapa" data-aos="fade-up">
                 <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2741.0135817043033!2d-89.22597922038894!3d13.695506049332074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633018aba54333%3A0xa0d4bc47a42922cf!2sTecnolog%C3%ADa%20y%20Suministros%2C%20S.A.%20de%20C.V.!5e0!3m2!1ses-419!2ssv!4v1672530773358!5m2!1ses-419!2ssv"
                 width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy"
@@ -82,14 +83,14 @@
             </div>
 
             <div class="contenedor-formulario">
-                <div class="info-form">
+                <div class="info-form" data-aos="fade-right">
                     <h4>Información de contacto</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eligendi est voluptates quae ipsam eius, in quasi odio porro aut vel beatae aperiam.</p>
                     <a href="#"><i class="fa fa-phone"></i> Correo: </a>
                     <a href="#"><i class="fa fa-envelope"></i> Whatsapp: </a>
                     <a href="#"><i class="fa fa-map-marked"></i> Dirección: </a>
                 </div>
-                <form action="#" autocomplete="off">
+                <form action="#" autocomplete="off" data-aos="fade-left">
                     <input type="text" name="nombre" placeholder="Nombre" class="campo">
                     <input type="emal" name="email" placeholder="Email" class="campo">
                     <textarea name="mensaje" placeholder="Mensaje"></textarea>
@@ -113,8 +114,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
-
-    <script src="../js/aos.js"></script>
 </body>
 
 </html>

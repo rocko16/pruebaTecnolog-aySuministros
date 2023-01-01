@@ -13,7 +13,7 @@ window.onscroll = function () {
 }
 
 /* Al momento que el DOM de la página esta cargado, utilizamos la función de slick para el slider */
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
     $('.customer-logos').slick({
         centerMode: true,
         centerPadding: '10px',
@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
 });
 
-
-
+/* Animaciones al momento de hacer scroll */
+AOS.init({
+    duration: 1000,
+});
 
