@@ -296,32 +296,34 @@ footer {
 }
 
 /* CSS PARA EL HERO */
-.contenedor-hero{
-	display: flex;
-	max-width: 100%;
-	height: 100vh;
-	background-image: url(../img/banner.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
+.contenedor-hero {
+    display: flex;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
 }
-.contenedor-hero .wrap{
-	max-width: 120rem;
-	margin: 0 auto;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-}
-.contenedor-hero .wrap .box{
-	color: var(--blanco);
-	text-align: center;
-	align-self: center;
+
+.contenedor-hero .wrap {
+    max-width: 120rem;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-.contenedor-hero .wrap .box h1{
-	font-size: 3.2rem;
-	line-height: .9;
-	padding-bottom: 1rem;
+.contenedor-hero .wrap .box {
+    color: var(--blanco);
+    text-align: center;
+    align-self: center;
+}
+
+.contenedor-hero .wrap .box h1 {
+    font-size: 3.2rem;
+    line-height: .9;
+    padding-bottom: 1rem;
     text-align: center;
 }
 
@@ -331,20 +333,21 @@ footer {
     }
 }
 
-.contenedor-hero .wrap .box .botones{
-	display: flex;
-	margin-top: 4rem;
+.contenedor-hero .wrap .box .botones {
+    display: flex;
+    margin-top: 4rem;
     justify-content: center;
     align-items: center;
 
 }
-.contenedor-hero .wrap .box .botones .btn1{
-	border: solid .2rem;
-	border-radius: 2rem;
-	padding: 1rem 3rem 1rem 3rem;
-	text-align: center;
-	text-decoration: none;
-	color: var(--blanco);
+
+.contenedor-hero .wrap .box .botones .btn1 {
+    border: solid .2rem;
+    border-radius: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--blanco);
     transition: all .3s ease-in-out;
 }
 
@@ -497,4 +500,53 @@ textarea {
 
 .servicios-enlace:hover {
     background: var(--color3);
+}
+
+/* CSS PARA EL INDICADOR DE CARGA */
+.contenedor-preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: var(--color5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+    transition: all 2s ease-in-out;
+}
+
+.preloader {
+    width: 9rem;
+    height: 9rem;
+    background: rgb(0, 227, 255);
+    background: linear-gradient(90deg, rgba(0, 227, 255, 1) 25%, rgba(36, 94, 217, 1) 64%);
+    border-radius: 50%;
+    animation-name: circulo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.contenedor-preloader img {
+    width: 8rem;
+    height: 8rem;
+    position: absolute;
+}
+
+
+@keyframes circulo {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.contenedor-preloader2 {
+    visibility: hidden;
+    opacity: 0;
 }

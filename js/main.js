@@ -51,3 +51,7 @@ AOS.init({
     duration: 1000,
 });
 
+/* Preloader */
+window.addEventListener('load', function () {
+    document.getElementById('contenedor-preloader').classList.toggle('contenedor-preloader2');
+});
