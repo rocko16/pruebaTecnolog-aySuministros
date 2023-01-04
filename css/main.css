@@ -514,12 +514,12 @@ textarea {
     justify-content: center;
     align-items: center;
     z-index: 100000;
-    transition: all 2s ease-in-out;
+    transition: all 2s ease-in;
 }
 
 .preloader {
-    width: 9rem;
-    height: 9rem;
+    width: 11rem;
+    height: 11rem;
     background: rgb(0, 227, 255);
     background: linear-gradient(90deg, rgba(0, 227, 255, 1) 25%, rgba(36, 94, 217, 1) 64%);
     border-radius: 50%;
@@ -530,8 +530,8 @@ textarea {
 }
 
 .contenedor-preloader img {
-    width: 8rem;
-    height: 8rem;
+    width: 10rem;
+    height: 10rem;
     position: absolute;
 }
 
