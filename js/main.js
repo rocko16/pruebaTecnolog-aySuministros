@@ -55,3 +55,16 @@ AOS.init({
 window.addEventListener('load', function () {
     document.getElementById('contenedor-preloader').classList.toggle('contenedor-preloader2');
 });
+
+
+/* Validaciones para el formulario */
+onload = function () {
+    var ele = document.querySelectorAll('.validanumericos')[0];
+    ele.onkeypress = function (e) {
+        if (isNaN(this.value + String.fromCharCode(e.charCode)))
+            return false;
+    }
+    ele.onpaste = function (e) {
+        e.preventDefault();
+    }
+}

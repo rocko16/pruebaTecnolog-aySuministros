@@ -92,21 +92,45 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
-            <div class="contenedor-formulario">
-                <div class="info-form" data-aos="fade-right">
-                    <h4>Información de contacto</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui eligendi est voluptates quae ipsam
-                        eius, in quasi odio porro aut vel beatae aperiam.</p>
-                    <a href="#"><i class="fa fa-phone"></i> Correo: </a>
-                    <a href="#"><i class="fa fa-envelope"></i> Whatsapp: </a>
-                    <a href="#"><i class="fa fa-map-marked"></i> Dirección: </a>
+            <div class="contenedor-formulario" data-aos="fade-up">
+                <div class="formulario">
+                    <h4>Estamos para asesorarte</h4>
+                    <form id="form" class="form" autocomplete="off" method="POST">
+                        <div class="form-control">
+                            <label for="nombre">Nombre: </label>
+                            <input id="nombre" type="text" class="campo">
+                            <p></p>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="email">Email: </label>
+                            <input id="email" type="email" class="campo">
+                            <p></p>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="empresa">Empresa: </label>
+                            <input id="empresa" type="text" class="campo">
+                            <p></p>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="telefono">Teléfono: </label>
+                            <input id="telefono" class="validanumericos campo" type="text" maxlength="8">
+                            <p></p>
+                        </div>
+
+                        <div class="form-control">
+                            <label for="comentario">Comentario: </label>
+                            <textarea name="comentario" id="comentario" class="campo" cols="30" rows="10"></textarea>
+                            <p></p>
+                        </div>
+    
+                        <div class="form-btn">
+                            <button class="btnForm">Enviar</button>
+                        </div>
+                    </form>
                 </div>
-                <form action="#" autocomplete="off" data-aos="fade-left">
-                    <input type="text" name="nombre" placeholder="Nombre" class="campo">
-                    <input type="emal" name="email" placeholder="Email" class="campo">
-                    <textarea name="mensaje" placeholder="Mensaje"></textarea>
-                    <input type="submit" name="enviar" value="Enviar" class="btn-enviar">
-                </form>
             </div>
         </div>
     </main>
